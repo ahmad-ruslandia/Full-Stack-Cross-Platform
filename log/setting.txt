@@ -1,0 +1,11 @@
+# Web - Device
+  final _host = "https://localhost:5001/api/User/";
+
+
+# Mobile Emulator Android - Device
+  final _host = "https://10.0.2.2:5001/api/User/";
+  "don't forget to setting android emulator"
+
+# Desktop - Device
+  final _host = "https://<your_ip-address>:5001/api/User/";
+  "get your ip address on command prompt (ipconfig)"

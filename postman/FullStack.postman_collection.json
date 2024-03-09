@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "864742cf-e7ee-4270-9a66-de836dc8686c",
+		"name": "FullStack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31403190"
+	},
+	"item": [
+		{
+			"name": "GetAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:5001/api/User/GetAll"
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost:5001/api/User/1"
+			},
+			"response": []
+		},
+		{
+			"name": "AddUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"Test User 4\",\r\n  \"mobileNumber\": \"+6200000000004\"\r\n}"
+				},
+				"url": "https://localhost:5001/api/User/Create"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUser",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fullName\": \"Test User 1\",\r\n  \"mobileNumber\": \"+6200000000001\"\r\n}"
+				},
+				"url": "https://localhost:5001/api/User/1"
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "https://localhost:5001/api/User/5"
+			},
+			"response": []
+		}
+	]
+}
